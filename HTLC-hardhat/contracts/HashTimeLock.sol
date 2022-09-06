@@ -1,9 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.7;
 
-// Import this file to use console.log
-import "hardhat/console.sol";
-
 contract HTLC {
     uint locked_id;
     // each one use hash time lock to swap will new a new LockContract struct
