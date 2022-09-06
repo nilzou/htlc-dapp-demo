@@ -24,8 +24,8 @@ run: npm run start
 * notes:
 Hash of 0x42 is 0x1114e8440f8d4bdd0537a45f44fc2d03d003c1e196ed86fbabc52e4140c34a66
 #### example of dapp
-![image](http://github.com/ly574605863/HTLC-Project/blob/main/doc/HTLC-dapp.png)
-![image](http://github.com/ly574605863/HTLC-Project/blob/main/doc/HTLC-dapp-createHTLC.png)
+![image](http://github.com/nilzou/htlc-dapp-demo/blob/main/doc/HTLC-dapp.png)
+![image](https://github.com/nilzou/htlc-dapp-demo/blob/main/doc/HTLC-dapp-createHTLC.png)
 
 ## What is HTLC
 A Hash Time Lock contract (HTLC) is essentially a type of payment in which two people agree to a financial arrangement where one party will pay the other party a certain amount of cryptocurrencies, such as Bitcoin or Bytom assets. However, because these contracts are Time Locked, the receiving party only has a certain amount of time to accept the payment, otherwise the money can be returned to the sender.
@@ -44,6 +44,8 @@ For example, Alice uses one BTC to swap Bob's 20 eth processes as follows:
 5. Alice sent her **originally generated string s** to Bob's contract and got 20 eth;
 
 6. Bob observed **Alice's original s value** in step 5, and successfully obtained a BTC by sending it to Alice's contract; So far, Alice and Bob have completed the exchange of assets.
+
+![image](https://github.com/nilzou/htlc-dapp-demo/blob/main/doc/htlc-in-cross-chain.png)
 
 * Notes:
 + the most import thing is that user can only refund their assets after endtime. And in Alice's HTLC contract, the endtime is longer than bob's, in this way, alice can not refund his token before bob withdraw.
